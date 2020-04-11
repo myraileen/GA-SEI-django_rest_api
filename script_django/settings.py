@@ -12,7 +12,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 from dotenv import load_dotenv
-import django_heroku
+
+# import django_heroku
 
 from pathlib import Path  # python3 only
 env_path = Path('./.env') / '.dotenv'
