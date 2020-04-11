@@ -11,9 +11,9 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-from dotenv import load_dotenv
-
 import django_heroku
+
+from dotenv import load_dotenv
 
 from pathlib import Path  # python3 only
 env_path = Path('./.env') / '.dotenv'
@@ -141,4 +141,4 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-django_heroku.setting(locals())
+django_heroku.settings(locals())
