@@ -13,7 +13,7 @@ class Book(models.Model):
 
 # Chapter
 class Chapter(models.Model):
-    book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='chapters')
+    book_id = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='chapters')
     chapter_num = models.PositiveSmallIntegerField()
     chapter = models.TextField()
     description = models.TextField()
@@ -24,7 +24,7 @@ class Chapter(models.Model):
 
 # Verse
 class Verse(models.Model):
-    chapter = models.ForeignKey(Chapter, on_delete=models.CASCADE, related_name='verses')
+    chapter_id = models.ForeignKey(Chapter, on_delete=models.CASCADE, related_name='verses')
     verse_num = models.PositiveSmallIntegerField()
     verse = models.TextField()
     image_url = models.TextField(null=True)
