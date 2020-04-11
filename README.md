@@ -2,7 +2,7 @@
 
 ## Project links
 * [Repository](https://github.com/myraileen/GA-SEI-Script/tree/django_rest_api)
-* [Deployment]()
+* [Deployment](https://mychapterapi.herokuapp.com/)
 
 ## Overview
 This branch is a version of my Djgango Project implemented as a REST-API using the Django's rest-framework. 
